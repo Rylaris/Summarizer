@@ -10,10 +10,11 @@
 		4CCD537C81354052D41ABCDB /* Pods_Summarizer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74C15863FE41DACBADF2D4F1 /* Pods_Summarizer.framework */; };
 		BBABBA41251CCD8600C6633B /* StopWords.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBABBA40251CCD8600C6633B /* StopWords.swift */; };
 		BBABBA4A251DCF1300C6633B /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBABBA49251DCF1300C6633B /* Example.swift */; };
-		BBABBA4F251DEBC500C6633B /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBABBA4E251DEBC500C6633B /* UIViewController+Alert.swift */; };
+		BBABBA4F251DEBC500C6633B /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBABBA4E251DEBC500C6633B /* UIViewController.swift */; };
 		BBABBA56251E2F8500C6633B /* TextRankManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBABBA55251E2F8500C6633B /* TextRankManager.swift */; };
-		BBABBA5B251E32C600C6633B /* String+Range.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBABBA5A251E32C600C6633B /* String+Range.swift */; };
+		BBABBA5B251E32C600C6633B /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBABBA5A251E32C600C6633B /* String.swift */; };
 		BBABBA5F251E3ABE00C6633B /* Sentence.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBABBA5E251E3ABE00C6633B /* Sentence.swift */; };
+		BBB4FD382536ED5800F92596 /* MainTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB4FD372536ED5800F92596 /* MainTextView.swift */; };
 		BBBC33A1251CC2E2004F70BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBBC33A0251CC2E2004F70BC /* AppDelegate.swift */; };
 		BBBC33A3251CC2E2004F70BC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBBC33A2251CC2E2004F70BC /* SceneDelegate.swift */; };
 		BBBC33A5251CC2E2004F70BC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBBC33A4251CC2E2004F70BC /* ViewController.swift */; };
@@ -29,10 +30,11 @@
 		BB5FEB087334AF73DE282EF4 /* Pods-Summarizer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Summarizer.release.xcconfig"; path = "Target Support Files/Pods-Summarizer/Pods-Summarizer.release.xcconfig"; sourceTree = "<group>"; };
 		BBABBA40251CCD8600C6633B /* StopWords.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWords.swift; sourceTree = "<group>"; };
 		BBABBA49251DCF1300C6633B /* Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
-		BBABBA4E251DEBC500C6633B /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
+		BBABBA4E251DEBC500C6633B /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		BBABBA55251E2F8500C6633B /* TextRankManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextRankManager.swift; sourceTree = "<group>"; };
-		BBABBA5A251E32C600C6633B /* String+Range.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Range.swift"; sourceTree = "<group>"; };
+		BBABBA5A251E32C600C6633B /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		BBABBA5E251E3ABE00C6633B /* Sentence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sentence.swift; sourceTree = "<group>"; };
+		BBB4FD372536ED5800F92596 /* MainTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTextView.swift; sourceTree = "<group>"; };
 		BBBC339D251CC2E2004F70BC /* Summarizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Summarizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBBC33A0251CC2E2004F70BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BBBC33A2251CC2E2004F70BC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,7 +78,6 @@
 		BBABBA4D251DEB1100C6633B /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				BBABBA4E251DEBC500C6633B /* UIViewController+Alert.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -94,9 +95,18 @@
 		BBABBA59251E32AE00C6633B /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				BBABBA5A251E32C600C6633B /* String+Range.swift */,
+				BBABBA5A251E32C600C6633B /* String.swift */,
+				BBABBA4E251DEBC500C6633B /* UIViewController.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		BBB4FD362536ECD000F92596 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BBB4FD372536ED5800F92596 /* MainTextView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		BBBC3394251CC2E1004F70BC = {
@@ -120,6 +130,7 @@
 		BBBC339F251CC2E2004F70BC /* Summarizer */ = {
 			isa = PBXGroup;
 			children = (
+				BBB4FD362536ECD000F92596 /* View */,
 				BBABBA59251E32AE00C6633B /* Extension */,
 				BBABBA54251E2EB500C6633B /* TextRank */,
 				BBABBA4D251DEB1100C6633B /* ViewController */,
@@ -147,6 +158,7 @@
 				BBBC3399251CC2E2004F70BC /* Sources */,
 				BBBC339A251CC2E2004F70BC /* Frameworks */,
 				BBBC339B251CC2E2004F70BC /* Resources */,
+				E38FB790F2C332F54796EA38 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -225,6 +237,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		E38FB790F2C332F54796EA38 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Summarizer/Pods-Summarizer-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Summarizer/Pods-Summarizer-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Summarizer/Pods-Summarizer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -232,8 +261,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBB4FD382536ED5800F92596 /* MainTextView.swift in Sources */,
 				BBBC33A5251CC2E2004F70BC /* ViewController.swift in Sources */,
-				BBABBA5B251E32C600C6633B /* String+Range.swift in Sources */,
+				BBABBA5B251E32C600C6633B /* String.swift in Sources */,
 				BBABBA5F251E3ABE00C6633B /* Sentence.swift in Sources */,
 				BBBC33A1251CC2E2004F70BC /* AppDelegate.swift in Sources */,
 				BBABBA4A251DCF1300C6633B /* Example.swift in Sources */,
@@ -241,7 +271,7 @@
 				BBABBA56251E2F8500C6633B /* TextRankManager.swift in Sources */,
 				BBABBA41251CCD8600C6633B /* StopWords.swift in Sources */,
 				BBBC33A3251CC2E2004F70BC /* SceneDelegate.swift in Sources */,
-				BBABBA4F251DEBC500C6633B /* UIViewController+Alert.swift in Sources */,
+				BBABBA4F251DEBC500C6633B /* UIViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

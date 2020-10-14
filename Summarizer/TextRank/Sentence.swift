@@ -12,4 +12,8 @@ struct Sentence {
     var words: [String] = []
     var index: Int = 0
     var ranking: Int = 0
+    
+    func computingRank() {
+        
+    }
 }

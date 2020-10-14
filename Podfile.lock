@@ -1,3 +1,20 @@
-PODFILE CHECKSUM: cd282aaac6ca490b718df493e6ca6a54d0cc97a8
+PODS:
+  - Reductio (1.4.0)
+  - SnapKit (5.0.1)
+
+DEPENDENCIES:
+  - Reductio
+  - SnapKit
+
+SPEC REPOS:
+  trunk:
+    - Reductio
+    - SnapKit
+
+SPEC CHECKSUMS:
+  Reductio: bb6fe437dc1025f766d1c39161029efad2220cc9
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+
+PODFILE CHECKSUM: 7fd1b311cf5acf68ae36533b431d5a8a1427b5ef
 
 COCOAPODS: 1.8.4

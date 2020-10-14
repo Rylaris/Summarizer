@@ -7,54 +7,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "E30F3A0D-B2DB-4BF2-9ED5-7F84214E8D08"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Summarizer/ViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "E30F3A0D-B2DB-4BF2-9ED5-7F84214E8D08 - d843cdb87dfc931a"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Summarizer.ViewController.viewDidLoad() -&gt; ()"
-                  moduleName = "Summarizer"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/rylaris/Documents/Code/Swift/Summarizer/Summarizer/ViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "36"
-                  endingLineNumber = "36"
-                  offsetFromSymbolStart = "1537">
-               </Location>
-               <Location
-                  uuid = "E30F3A0D-B2DB-4BF2-9ED5-7F84214E8D08 - f964bc85f62245f6"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Array&lt;Swift.String&gt;) -&gt; () in Summarizer.ViewController.viewDidLoad() -&gt; ()"
-                  moduleName = "Summarizer"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/rylaris/Documents/Code/Swift/Summarizer/Summarizer/ViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "37"
-                  endingLineNumber = "37"
-                  offsetFromSymbolStart = "34">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "F626547A-D3FC-48B1-8977-11B69D5621AB"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -103,22 +55,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "A23F400A-AE86-423F-9892-6A24CAD09015"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Summarizer/ViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "D4C8D397-64BF-4540-8AE6-3227081D1AA6"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -142,8 +78,72 @@
             filePath = "Summarizer/TextRank/TextRankManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
+            landmarkName = "summarize(of:numOfSentences:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "70AB8B02-8B73-4B20-A870-9353115E7573"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Summarizer/TextRank/TextRankManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
+            landmarkName = "summarize(of:numOfSentences:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "70AB8B02-8B73-4B20-A870-9353115E7573 - 41d1fda4e1f30fc0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static Summarizer.TextRankManager.summarize(of: Swift.String, numOfSentences: Swift.Int) -&gt; Swift.String"
+                  moduleName = "Summarizer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rylaris/Documents/Code/Swift/Summarizer/Summarizer/TextRank/TextRankManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "59"
+                  endingLineNumber = "59"
+                  offsetFromSymbolStart = "1845">
+               </Location>
+               <Location
+                  uuid = "70AB8B02-8B73-4B20-A870-9353115E7573 - 3b02fbb076d36c2f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #4 (Summarizer.Sentence, Summarizer.Sentence) -&gt; Swift.Bool in static Summarizer.TextRankManager.summarize(of: Swift.String, numOfSentences: Swift.Int) -&gt; Swift.String"
+                  moduleName = "Summarizer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rylaris/Documents/Code/Swift/Summarizer/Summarizer/TextRank/TextRankManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "59"
+                  endingLineNumber = "59"
+                  offsetFromSymbolStart = "28">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2683B70D-0190-4381-B73B-86B89DB5312D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Summarizer/TextRank/TextRankManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
             landmarkName = "summarize(of:numOfSentences:)"
             landmarkType = "7">
          </BreakpointContent>

@@ -21,36 +21,37 @@ extension TextRankManager {
         
         let stopWords = StopWords.words
         
-        let sentenceTokenizer = NLTokenizer(unit: .sentence)
-        sentenceTokenizer.string = text
-        sentenceTokenizer.enumerateTokens(in: text.range) { tokenRangeOfSentence, _ in
+        enumerate(of: text, unit: .sentence, using: { tokenRangeOfSentence, _ in
             let s = String(text[tokenRangeOfSentence])
             let from = tokenRangeOfSentence.lowerBound.samePosition(in: text.utf16)
             let to = tokenRangeOfSentence.upperBound.samePosition(in: text.utf16)
             let nsRange = NSRange(location: text.utf16.distance(from: text.utf16.startIndex, to: from!), length: text.utf16.distance(from: from!, to: to!))
+            
             var sentence = Sentence()
             sentence.textRange = nsRange
             sentence.index = sentences.count
-            let wordTokenizer = NLTokenizer(unit: .word)
-            wordTokenizer.string = s
-            wordTokenizer.enumerateTokens(in: s.range, using: { tokenRangeOfWord, _ in
+            
+            enumerate(of: s, unit: .word, using: { tokenRangeOfWord, _ in
                 let word = s[tokenRangeOfWord].lowercased()
+                
                 if !stopWords.contains(word) {
                     wordFrequencies[word, default: 0] += 1
                     sentence.words.append(word)
                 }
+                
                 return true
             })
+            
             sentences.append(sentence)
             return true
-        }
-        
-        
+        })
         
         for i in sentences.indices {
             sentences[i].ranking = sentences[i].words.reduce(0, { (rank, word) -> Int in
-                rank + wordFrequencies[word, default: 0]
+                print("\(word)的词频是\(wordFrequencies[word, default: 0])")
+                return rank + wordFrequencies[word, default: 0]
             })
+            print("\(sentences[i])的Rank是\(sentences[i].ranking)")
         }
         
         // Sort Sentences by ranking
@@ -77,5 +78,15 @@ extension TextRankManager {
         }
         
         return summary
+    }
+    
+    static func enumerateText(of text: String, using block: (Range<String.Index>, NLTokenizer.Attributes) -> Bool) {
+        
+    }
+    
+    static func enumerate(of text: String, unit: NLTokenUnit, using block: (Range<String.Index>, NLTokenizer.Attributes) -> Bool) {
+        let wordTokenizer = NLTokenizer(unit: unit)
+        wordTokenizer.string = text
+        wordTokenizer.enumerateTokens(in: text.range, using: block)
     }
 }
