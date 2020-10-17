@@ -14,7 +14,7 @@ class TextRankManager {
 
 extension TextRankManager {
     
-    static func summarize(of text: String, numOfSentences n: Int) -> String {
+    static func summarize(of text: String, numOfSentences n: Int) -> [String] {
         
         var sentences: [Sentence] = []
         var wordFrequencies: [String: Int] = [:]
@@ -48,41 +48,27 @@ extension TextRankManager {
         
         for i in sentences.indices {
             sentences[i].ranking = sentences[i].words.reduce(0, { (rank, word) -> Int in
-                print("\(word)的词频是\(wordFrequencies[word, default: 0])")
                 return rank + wordFrequencies[word, default: 0]
             })
-            print("\(sentences[i])的Rank是\(sentences[i].ranking)")
         }
         
-        // Sort Sentences by ranking
+        // 按照权重降序排列
         let sentencesByRanking = sentences.sorted { $0.ranking > $1.ranking }
         
-        // Select the most important sentences
+        // 选出权重最高的n个句子按出现顺序排列
         let keySentences = sentencesByRanking.prefix(n).sorted { $0.index < $1.index }
         
-        // Build Summary based on the most important sentences
-        var summary = ""
-        var firstSentence = true
+        var result = [String]()
         for sentence in keySentences {
             guard let text = text[sentence.textRange] else {
                 continue
             }
-            
-            if firstSentence {
-                firstSentence = false
-            } else {
-                summary.append(" ")
-            }
-            
-            summary.append(text.trimmingCharacters(in: .whitespacesAndNewlines))
+            result.append(String(text))
         }
         
-        return summary
+        return result
     }
     
-    static func enumerateText(of text: String, using block: (Range<String.Index>, NLTokenizer.Attributes) -> Bool) {
-        
-    }
     
     static func enumerate(of text: String, unit: NLTokenUnit, using block: (Range<String.Index>, NLTokenizer.Attributes) -> Bool) {
         let wordTokenizer = NLTokenizer(unit: unit)
